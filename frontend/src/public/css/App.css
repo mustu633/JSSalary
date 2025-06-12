@@ -1,0 +1,119 @@
+:root {
+    --blue: #007bff; /**/
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745; /**/
+    --teal: #20c997; /**/
+    --cyan: #17a2b8; /**/
+    --white: #fff; /**/
+    --gray: #ebeaea;
+    --gray-dark: #343a40;
+    --primary: #007bff; /**/
+    --secondary: #6c757d; /**/
+    --success: #366341; /**/
+    --info: #17a2b8; /**/
+    --warning: #ffc107;
+    --danger: #dc3545; /**/
+    --light: #e4e5e6; /**/
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+  }  
+
+/* General */
+.errMsg{
+    color: red;
+}
+.processingMsg{
+    color: var(--success);
+}
+/* Navbar */
+.navbar{
+    height: 10vh !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    margin-bottom: 15px !important;
+    background-color: whitesmoke;
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 100 !important;
+}
+.navbar-brand{
+    color: #fe424d !important;
+    font-size: 2rem !important;
+}
+.nav-link{
+    height: 10vh !important;
+    padding: 20px 25px !important;
+}
+.navbar .nav-link:hover{
+    background-color: #fe424d;
+}
+
+ /* Footers */
+.footer{
+    height: 18vh !important;
+    background-color: #ebebeb !important;
+    padding: auto !important;
+ }
+.f-info{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.f-info-socials a{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Home  */
+.body{
+    min-height: 62vh !important;
+}
+/* single */
+.card{
+    background-color: var(--gray) !important;
+    padding: 15px !important;
+}
+
+.dropdown-btn{
+    width: 100% !important;
+    background-color: white !important;
+    font-size: 18px !important;
+}
+.dropdown-btn:hover{
+    cursor: pointer !important;
+    background-color: var(--secondary) !important;
+    color: var(--white) !important;
+}
+#view-btn:hover, #edit-btn:hover{
+background-color: var(--success);
+}
+#delete-btn:hover{
+    background-color: var(--danger);
+}
+.profile:hover{
+    cursor: pointer !important;
+    color: var(--white) !important;
+}
+.dlt-btn:hover{
+    cursor: pointer !important;
+}
