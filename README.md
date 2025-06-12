@@ -16,9 +16,7 @@ A full-stack **MERN** application to manage employee salary data. Users can uplo
 
 ## 🛠️ Quickstart
 
-### 🔧 Backend
-npm start
-Create a .env file in backend/ (not tracked in Git):
+
 
 set this in your .env :
 
@@ -26,9 +24,19 @@ TOKEN_KEY=YOUR_TOKEN_KEY
 ATLASDB_URL=YOUR_ATLAS_URL
 SECRET=YOUR_SECRETE
 
+-------------------------------------------------------------
+
+### 🔧 Backend
+npm start
+Create a .env file in backend/ (not tracked in Git):
+
+-----------------------------------------------------------------
+
 ⚙️ Frontend
 cd frontend
 npm start
+
+------------------------------------------------------------
 
 📁 Project Structure
 
@@ -38,12 +46,16 @@ JSSalary/
 
 The UI processes the file and imports the data automatically.
 
+------------------------------------------------------------
+
 🔐 Security & Configuration
 .env is listed in .gitignore to keep credentials secure
 
 MongoDB Atlas hosts your database securely
 
 No sensitive information is stored in the repository
+
+-------------------------------------------------------------------------
 
 📦 Technology Stack
 Frontend: React, Axios
@@ -54,9 +66,13 @@ Database: MongoDB Atlas
 
 Extras: xlsx, express-fileupload, dotenv, nodemon
 
+----------------------------------------------------------------------------
+
 👤 Author
 Ghulam Mustafa
-GitHub: mustu633
+GitHub: [mustu633](https://github.com/mustu633)
+
+--------------------------------------------------------------------
 
 ✅ Usage Summary
 Upload salary data via Excel
