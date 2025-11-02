@@ -1,6 +1,14 @@
 JSSalary — Salary Status Management (MERN)
 
-A full-stack MERN application to manage employee salary data. Users can upload Excel files containing employee and salary details, which are automatically parsed and stored in a local MongoDB database. The UI also allows adding, editing, and deleting individual employee and salary records.
+A full-stack MERN application to manage employee salary data.
+
+Users can:
+
+Upload Excel files containing employee and salary details
+
+Automatically parse and store data in local MongoDB
+
+Add, edit, and delete individual employee and salary records
 
 Features
 
@@ -15,16 +23,16 @@ Express/Mongoose backend API with local MongoDB
 Secure configuration via .env file (database URI & secret keys hidden)
 
 Quickstart
-Backend
+Backend Setup
 
-Create a .env file inside backend/ folder with the following:
+Create a .env file inside backend/ folder:
 
-TOKEN_KEY=YOUR_TOKEN_KEY
-DB_URL=YOUR_LOCAL_MONGODB_URL
-SECRET=YOUR_SECRET_KEY
+TOKEN_KEY
+DB_URL
+SECRET
 
 
-Install dependencies:
+Install backend dependencies:
 
 cd backend
 npm install
@@ -34,9 +42,9 @@ Start backend server:
 
 npm start
 
-Frontend
+Frontend Setup
 
-Install dependencies:
+Install frontend dependencies:
 
 cd frontend
 npm install
@@ -46,21 +54,16 @@ Start frontend server:
 
 npm start
 
-Project Structure
-JSSalary/
-├── backend/      # Node.js + Express + Mongoose API
-├── frontend/     # React application
 
+The UI automatically processes Excel files and imports data
 
-The UI processes Excel files and imports data automatically.
-
-Local MongoDB is used to store employee and salary data.
+Local MongoDB stores employee and salary data
 
 Security & Configuration
 
-.env is listed in .gitignore to keep credentials secure.
+.env is included in .gitignore to keep credentials secure
 
-No sensitive information is stored in the repository.
+No sensitive information is stored in the repository
 
 Technology Stack
 
