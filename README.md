@@ -10,6 +10,8 @@ Automatically parse and store data in local MongoDB
 
 Add, edit, and delete individual employee and salary records
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Features
 
 Bulk import employee and salary data from Excel files
@@ -21,6 +23,8 @@ React-based frontend with simple UI
 Express/Mongoose backend API with local MongoDB
 
 Secure configuration via .env file (database URI & secret keys hidden)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Quickstart
 Backend Setup
@@ -42,6 +46,8 @@ Start backend server:
 
 npm start
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Frontend Setup
 
 Install frontend dependencies:
@@ -49,21 +55,21 @@ Install frontend dependencies:
 cd frontend
 npm install
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Start frontend server:
 
 npm start
 
-
-The UI automatically processes Excel files and imports data
-
-Local MongoDB stores employee and salary data
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Security & Configuration
 
 .env is included in .gitignore to keep credentials secure
 
 No sensitive information is stored in the repository
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Technology Stack
 
@@ -75,19 +81,9 @@ Database: MongoDB (local)
 
 Extras: xlsx, express-fileupload, dotenv, nodemon
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Author
 
 Ghulam Mustafa
 GitHub: mustu633
-
-Usage Summary
-
-Upload salary data via Excel
-
-Manage individual employee and salary records
-
-Run backend: npm start in /backend
-
-Run frontend: npm start in /frontend
-
-Keep .env private for security
