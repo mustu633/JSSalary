@@ -1,88 +1,90 @@
-# 💼 JSSalary — Salary Status Management (MERN)
+JSSalary — Salary Status Management (MERN)
 
-A full-stack **MERN** application to manage employee salary data. Users can upload Excel files containing employee and salary details, which are automatically parsed and stored in a **MongoDB Atlas** cloud database. Additionally, the UI allows for **adding**, **editing**, and **deleting** individual employee and salary records.
+A full-stack MERN application to manage employee salary data. Users can upload Excel files containing employee and salary details, which are automatically parsed and stored in a local MongoDB database. The UI also allows adding, editing, and deleting individual employee and salary records.
 
----
+Features
 
-## 🚀 Features
+Bulk import employee and salary data from Excel files
 
-- Bulk import employee and salary data from Excel files  
-- Create, read, update, delete (CRUD) individual records  
-- React-based frontend with intuitive UI  
-- Express/Mongoose backend API with MongoDB Atlas  
-- Secure configuration via `.env` (database URI & secret keys hidden)
+Create, read, update, delete (CRUD) individual records
 
----
+React-based frontend with simple UI
 
-## 🛠️ Quickstart
+Express/Mongoose backend API with local MongoDB
 
+Secure configuration via .env file (database URI & secret keys hidden)
 
+Quickstart
+Backend
 
-set this in your .env :
+Create a .env file inside backend/ folder with the following:
 
 TOKEN_KEY=YOUR_TOKEN_KEY
-ATLASDB_URL=YOUR_ATLAS_URL
-SECRET=YOUR_SECRETE
+DB_URL=YOUR_LOCAL_MONGODB_URL
+SECRET=YOUR_SECRET_KEY
 
--------------------------------------------------------------
 
-### 🔧 Backend
+Install dependencies:
+
+cd backend
+npm install
+
+
+Start backend server:
+
 npm start
-Create a .env file in backend/ (not tracked in Git):
 
------------------------------------------------------------------
+Frontend
 
-⚙️ Frontend
+Install dependencies:
+
 cd frontend
+npm install
+
+
+Start frontend server:
+
 npm start
 
-------------------------------------------------------------
-
-📁 Project Structure
-
+Project Structure
 JSSalary/
 ├── backend/      # Node.js + Express + Mongoose API
 ├── frontend/     # React application
 
-The UI processes the file and imports the data automatically.
 
-------------------------------------------------------------
+The UI processes Excel files and imports data automatically.
 
-🔐 Security & Configuration
-.env is listed in .gitignore to keep credentials secure
+Local MongoDB is used to store employee and salary data.
 
-MongoDB Atlas hosts your database securely
+Security & Configuration
 
-No sensitive information is stored in the repository
+.env is listed in .gitignore to keep credentials secure.
 
--------------------------------------------------------------------------
+No sensitive information is stored in the repository.
 
-📦 Technology Stack
+Technology Stack
+
 Frontend: React, Axios
 
 Backend: Node.js, Express, Mongoose
 
-Database: MongoDB Atlas
+Database: MongoDB (local)
 
 Extras: xlsx, express-fileupload, dotenv, nodemon
 
-----------------------------------------------------------------------------
+Author
 
-👤 Author
 Ghulam Mustafa
-GitHub: [mustu633](https://github.com/mustu633)
+GitHub: mustu633
 
---------------------------------------------------------------------
+Usage Summary
 
-✅ Usage Summary
 Upload salary data via Excel
 
-Manage individual records
+Manage individual employee and salary records
 
-Run backend with npm start (in /backend)
+Run backend: npm start in /backend
 
-Run frontend with npm start (in /frontend)
-
-Leverage MongoDB Atlas for cloud storage
+Run frontend: npm start in /frontend
 
 Keep .env private for security
